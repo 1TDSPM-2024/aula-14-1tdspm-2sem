@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div>
         <h1>404 - NotFound</h1>
-        <h2>This page could not be found.</h2>
+        <h2>This page could not be found</h2>
         
         {/* Forma incorreta de carrgar imagens no NEXT.js */}
         {/* <img src="/img/img-404.jpg" alt="Página de erro." /> */}
