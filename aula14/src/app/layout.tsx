@@ -1,6 +1,13 @@
 import Cabecalho from "@/components/Cabecalho/Cabecalho";
 import Rodape from "@/components/Rodape/Rodape";
 import type { Metadata } from "next";
+import "@/app/global.css";
+
+export const viewport = {
+  width:"device-width",
+  inicial_scale:1.0,
+  colorScheme: "dark",
+}
 
 export const metadata: Metadata = {
   title: "Meu Boyler Plate",

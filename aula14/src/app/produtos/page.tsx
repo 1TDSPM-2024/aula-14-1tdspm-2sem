@@ -3,12 +3,16 @@ import Link from "next/link";
 export default function Produtos() {
 
     const lista = [
-        { id: 1, nome: "garfo", qtd: 1000 },
-        { id: 2, nome: "colher", qtd: 2000 },
-        { id: 3, nome: "faca", qtd: 1000 },
-        { id: 4, nome: "prato", qtd: 1000 },
-        { id: 5, nome: "copo", qtd: 1000 },
-        { id: 6, nome: "guardanapo", qtd: 10000 },
+        { id: 1, nome: "Espada do Rei Destruído", preco: 3200 },
+        { id: 2, nome: "Limiar da Noite", preco: 2800 },
+        { id: 3, nome: "Armadura de Espinhos", preco: 3000 },
+        { id: 4, nome: "Rabadon's Deathcap", preco: 3600 },
+        { id: 5, nome: "Botas da Mobilidade", preco: 1100 },
+        { id: 6, nome: "Capa da Invisibilidade", preco: 650 },
+        { id: 7, nome: "Aegis da Legião", preco: 2400 },
+        { id: 8, nome: "Lâmina do Rei Destruído", preco: 3200 },
+        { id: 9, nome: "Murmúrio de Goredrinker", preco: 3500 },
+        { id: 10, nome: "Dente de Nashor", preco: 3000 },
     ];
 
     return (
@@ -20,7 +24,7 @@ export default function Produtos() {
                         <tr>
                             <th>ID</th>
                             <th>NOME</th>
-                            <th>QTD</th>
+                            <th>PREÇO</th>
                             <th>EDITAR</th>
                         </tr>
                     </thead>
@@ -29,7 +33,7 @@ export default function Produtos() {
                             <tr key={p.id}>
                                 <td>{p.id}</td>
                                 <td>{p.nome}</td>
-                                <td>{p.qtd}</td>
+                                <td>{p.preco}g</td>
                                 <td> <Link href={`/produtos/produto/${p.id}`}>Editar</Link> </td>
                             </tr>
                         ))}
