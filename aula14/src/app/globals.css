@@ -5,7 +5,8 @@
 
 @layer components{
     .cabecalho{
-        @apply bg-slate-900;
+        @apply bg-slate-900 h-12;
+       
         
     }
 }
