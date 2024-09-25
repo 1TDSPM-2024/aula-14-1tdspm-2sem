@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title: "PRODUTOS",
   description: "Criado por Rei Luizinho",
