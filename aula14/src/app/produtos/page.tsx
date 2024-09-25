@@ -3,12 +3,12 @@ import Link from "next/link";
 export default function Produtos() {
 
     const lista = [
-        { id: 1, nome: "garfo", qtd: 1000 },
-        { id: 2, nome: "colher", qtd: 2000 },
-        { id: 3, nome: "faca", qtd: 1000 },
-        { id: 4, nome: "prato", qtd: 1000 },
-        { id: 5, nome: "copo", qtd: 1000 },
-        { id: 6, nome: "guardanapo", qtd: 10000 },
+        { id: 1, nome: "napolitano", qtd: 1000 },
+        { id: 2, nome: "vinho", qtd: 2000 },
+        { id: 3, nome: "abacaxi", qtd: 1000 },
+        { id: 4, nome: "morango", qtd: 1000 },
+        { id: 5, nome: "mexerica", qtd: 1000 },
+        { id: 6, nome: "creme", qtd: 10000 },
     ];
 
     return (

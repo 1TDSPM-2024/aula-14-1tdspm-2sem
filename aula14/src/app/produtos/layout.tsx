@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "PRODUTOS",
-  description: "Criado por Rei Luizinho",
+  description: "Criado por ( ◡̀_◡́)ᕤ",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
