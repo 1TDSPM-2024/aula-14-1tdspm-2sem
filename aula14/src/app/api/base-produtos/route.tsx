@@ -1,18 +1,10 @@
 import { NextResponse } from "next/server";
- 
-const dados = [
-    { id: 1, nome: "Espada do Rei Destruído", preco: 3200 },
-    { id: 2, nome: "Limiar da Noite", preco: 2800 },
-    { id: 3, nome: "Armadura de Espinhos", preco: 3000 },
-    { id: 4, nome: "Rabadon's Deathcap", preco: 3600 },
-    { id: 5, nome: "Botas da Mobilidade", preco: 1100 },
-    { id: 6, nome: "Capa da Invisibilidade", preco: 650 },
-    { id: 7, nome: "Aegis da Legião", preco: 2400 },
-    { id: 8, nome: "Lâmina do Rei Destruído", preco: 3200 },
-    { id: 9, nome: "Murmúrio de Goredrinker", preco: 3500 },
-    { id: 10, nome: "Dente de Nashor", preco: 3000 },
-];
+import { promises as fs} from "fs";
 
 export async function GET() {
-    return NextResponse.json({dados})
+    const file = await fs.readFile(process.cwd() + "/src/data/base.json","utf-8");
+    const produtos = JSON.parse(file);
+
+
+    return NextResponse.json(produtos)
 }
