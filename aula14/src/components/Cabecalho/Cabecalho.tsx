@@ -2,7 +2,7 @@ import Menu from "../Menu/Menu";
 
 export default function Cabecalho() {
     return (
-        <header>
+        <header className="bg-slate-400 ,  ">
             <h1>Cabecalho</h1>
             <Menu />
         </header>
